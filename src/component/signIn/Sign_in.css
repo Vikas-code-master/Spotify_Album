@@ -313,7 +313,13 @@ html {
 }
 button.btn_for._register {
     margin: 35px;
+    font-size: small !important;
 }
 img.logo-login-card {
     border-radius: 20px;
+}
+span.btn_for._register {
+  font-size: 12px;
+  cursor: pointer;
+  margin-top:5px
 }

@@ -1,4 +1,58 @@
 .albums {
     display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width : 94%;
+    color:#fff;
+    background-color: #000;
+    border:1px solid #fff;
+    padding : 25px;
+    margin:15px;
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-radius: 10px;
+}
+span {
+    font-family: fantasy;
+    font-size: larger;
+}
+
+.album-detail{
+    display: flex;
     flex-direction: column;
+    /* padding-left: -200px; */
+    width: 40%;
+    justify-content: space-around;
+    text-align: start;
+}
+.album-banner{
+    width: 100px;
+    height: 100px;
+}
+.header{
+    display: flex;
+    justify-content:space-between;
+    width: 100% ;
+background-color:#1ecf5e ;
+height: 70px;
+}
+.icon {
+    width:20%;
+}
+.content{
+    text-align: center;
+}
+.logo{
+    width :40px ;
+    height : 40px ;
+    border-radius: 7px;
+    margin-left: 50px;
+   margin-top : 12px;
+}
+.user{
+    width :25px ;
+    height : 25px ;
+    padding-right: 50px;
+    margin-top: 20px;
+    cursor : pointer ;
+
 }

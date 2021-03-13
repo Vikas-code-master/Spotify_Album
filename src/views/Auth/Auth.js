@@ -20,7 +20,7 @@ return(
 	<>
      {isSign_up === true ? <Sign_up isSign_up = {isSign_up} handleToggle={handleToggle} /> 
 	 : <Sign_in isSign_up = {isSign_up} handleToggle={handleToggle}/> }
-	 <button  className = "but" onClick = {()=>{setisSign_up(!isSign_up)}}>hello</button>
+	 {/* <button  className = "but" onClick = {()=>{setisSign_up(!isSign_up)}}>hello</button> */}
 	</>
 )
 }

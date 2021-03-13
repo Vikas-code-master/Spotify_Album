@@ -23,7 +23,7 @@ const SignIn = (props)=>{
 <div class="login-card">
 	<div class="login-glass">
 		<img className="logo-login-card" src={logo}/>
-        <h1 class="challenge-title">Spotify</h1>
+        {/* <h1 class="challenge-title">Spotify</h1> */}
 	</div>
 	<div class="login-form-container">
 		<h3 class="login-title">
