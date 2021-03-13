@@ -11,7 +11,7 @@ const App = (props)=> {
     <div className="App">
         <Switch>
        
-          <Route path='/albums' component = {Spotify} /> 
+          <Route path='/' component = {Spotify} /> 
           <Route path='/auth' component = {Auth} />
       
         </Switch>
