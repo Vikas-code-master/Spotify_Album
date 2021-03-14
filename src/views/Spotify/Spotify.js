@@ -16,7 +16,7 @@ var config = {
   method: 'get',
   url: 'https://api.spotify.com/v1/albums?ids=15AzUynz7teTdMlQrogKmd,3FX5u4NRsdqBzG4D19yn4L,3fgTNjcIsvJweiSNP6v5xG,2jZGy0iv39ZQTpXZJ8K7pC,2xzGAGgWD6x2MGr2qVcQP0,72qrnM4yUNMDDlWiqKc8iY,6HukFdvHHvXI3EAhjvtnF3,1IeXdR2ptc5Jhxmko89CgE,0MDhZ0yRkugNEg7PmMMUE8,1D0PTM0bg7skufClSUOxTP',
   headers: { 
-    'Authorization': 'Bearer BQD1-EMgmNaKb4llz4QK40O9iqS1CzyOekiCufmyct59afg20Tgh3yw1-dsURa-RO1jXXXqJtAkg_NbNz7_vi8XmJWvQeSRMkxucLC1jlgVAwVNGLp746rL1HyKrft3Q0MqQ7j9ZMidVoanDXPP-0AdtRCxu2WD3QCk'
+    'Authorization': 'Bearer BQCAC_MmTRBzwbq_QldiVGdCRzSEwavPB9GCa1_6RD6j1kPNqhpPsIsC_hlITOVfVLRlxi4sBs-_oF89b-9UuJn8jQ6a8Zqw7n2irlFLpX0Jy8GvIGHH5SvWuXXzL3wc7Xa6s_BVMH8FAJjO_veJusWBcQbf3UBqgxI'
   }
 };
 
