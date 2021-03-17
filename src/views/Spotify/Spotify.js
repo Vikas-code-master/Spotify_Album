@@ -13,7 +13,7 @@ const Spotify = ()=>
     method: 'get',
     url: 'https://api.spotify.com/v1/albums?ids=15AzUynz7teTdMlQrogKmd,3FX5u4NRsdqBzG4D19yn4L,3fgTNjcIsvJweiSNP6v5xG,2jZGy0iv39ZQTpXZJ8K7pC,2xzGAGgWD6x2MGr2qVcQP0,72qrnM4yUNMDDlWiqKc8iY,6HukFdvHHvXI3EAhjvtnF3,1IeXdR2ptc5Jhxmko89CgE,0MDhZ0yRkugNEg7PmMMUE8,1D0PTM0bg7skufClSUOxTP',
     headers: { 
-    'Authorization': 'Bearer BQCOWl_v4Ljt48yqiL9eXWO_wxmn5fKh8-QI8YiSV9JOwlddFy1Y0bVwrS2Cq2nlM9G2mwESdAkprBqrRX5Zi1gqB6bffAJ1ZPcnwNGOqD9MNW1DLAzBFWN1S4FlPYivuxBS4Acn7LAleveQ07UAAdtGFz64UZZTJPk'
+    'Authorization': 'Bearer BQD4969ecHCaFZVHYKJ-tDRPtmbZUggd6DEc03y7YP881tFglxQkvMARWvv4S30pk8WWj57RZFc5-yW4gcbPc7d7PsLIIGSwpcp35k55nbr-9wbj7QrGKx693-m4_2rdyRzuiYIIbQwvijUdaF5iYzOprnw5XZUeTZ0'
     }
 };
 
