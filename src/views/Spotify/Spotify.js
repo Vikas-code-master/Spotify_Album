@@ -5,32 +5,28 @@ import user from '../../assets/user.svg';
 import {Link} from 'react-router-dom'
 const Spotify = ()=>
 {
-    const [Albums , setAlbums] = useState('');
-
-    
+    const [Albums , setAlbums] = useState(''); 
     useEffect(
         ()=>{
             var axios = require('axios');
-
-var config = {
-  method: 'get',
-  url: 'https://api.spotify.com/v1/albums?ids=15AzUynz7teTdMlQrogKmd,3FX5u4NRsdqBzG4D19yn4L,3fgTNjcIsvJweiSNP6v5xG,2jZGy0iv39ZQTpXZJ8K7pC,2xzGAGgWD6x2MGr2qVcQP0,72qrnM4yUNMDDlWiqKc8iY,6HukFdvHHvXI3EAhjvtnF3,1IeXdR2ptc5Jhxmko89CgE,0MDhZ0yRkugNEg7PmMMUE8,1D0PTM0bg7skufClSUOxTP',
-  headers: { 
+    var config = {
+    method: 'get',
+    url: 'https://api.spotify.com/v1/albums?ids=15AzUynz7teTdMlQrogKmd,3FX5u4NRsdqBzG4D19yn4L,3fgTNjcIsvJweiSNP6v5xG,2jZGy0iv39ZQTpXZJ8K7pC,2xzGAGgWD6x2MGr2qVcQP0,72qrnM4yUNMDDlWiqKc8iY,6HukFdvHHvXI3EAhjvtnF3,1IeXdR2ptc5Jhxmko89CgE,0MDhZ0yRkugNEg7PmMMUE8,1D0PTM0bg7skufClSUOxTP',
+    headers: { 
     'Authorization': 'Bearer BQCOWl_v4Ljt48yqiL9eXWO_wxmn5fKh8-QI8YiSV9JOwlddFy1Y0bVwrS2Cq2nlM9G2mwESdAkprBqrRX5Zi1gqB6bffAJ1ZPcnwNGOqD9MNW1DLAzBFWN1S4FlPYivuxBS4Acn7LAleveQ07UAAdtGFz64UZZTJPk'
-  }
+    }
 };
 
-axios(config)
-.then(function (response) {
-  console.log(JSON.stringify(response.data));
-  setAlbums(response.data)
-})
-.catch(function (error) {
-  console.log(error);
+    axios(config)
+    .then(function (response) {
+    console.log(JSON.stringify(response.data));
+    setAlbums(response.data)
+  })
+    .catch(function (error) {
+    console.log(error);
 });
-      },[]
+    },[]
     )
-    // console.log("xxxxx" , Albums.albums.length)
     return (
         <div>
         <div className="header">
