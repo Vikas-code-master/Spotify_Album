@@ -9,7 +9,7 @@ const Spotify = ()=>
     useEffect(
         ()=>{
             var myHeaders = new Headers();
-            myHeaders.append("Authorization", "Bearer BQBE1rdrqtmIY4urlsvj982UDKfVzxOd-cgFoxeB-Za-V7yHwpX109kwEu_MLb2emI74dylRNAnvjl5v_t9OEzakFgour8ApzQMkNF_pTdRNbWG92MXe2skzh2pzM0y4JVIQq4r0eIIBYdRcm3wZOZpo85PZ1BNIG4U");
+            myHeaders.append("Authorization", "BQCJaP1YprAyuNG-G-3iHfKaiDu8jxambqBOQEeqFZZPASF9F5nxLk9JRX4_8yqSBvSJn40Kw4qH4yfQDMef0al9E-2RI4H2nMrSvvHioKRzNN52RtCaofTiRyIrDNYqpNn3ety3VdZivKU5r_Uv2Ar3skyGKRZuug4");
             
             var requestOptions = {
               method: 'GET',
