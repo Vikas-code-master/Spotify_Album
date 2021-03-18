@@ -8,15 +8,15 @@ import linkedin from '../../assets/linkedin.svg'
 
 
 const SignIn = (props)=>{
-    const [Email , setEmail] = useState('');
-    const [Password , setPassword] = useState('') ;
-    function handleChange(e) {
-       setPassword(e.target.value);
-     }
-   const handleSubmit = (e)=>{
-       setPassword('');
-       e.preventDefault();
-   }
+    // const [Email , setEmail] = useState('');
+    // const [Password , setPassword] = useState('') ;
+    // function handleChange(e) {
+    //    setPassword(e.target.value);
+    //  }
+//    const handleSubmit = (e)=>{
+//        setPassword('');
+//        e.preventDefault();
+//    }
    
     return <div className="auth">
 

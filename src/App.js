@@ -13,8 +13,6 @@ const App = (props)=> {
        
         <Route path='/auth' component = {Auth} />
           <Route path='/' component = {Spotify} /> 
-          
-      
         </Switch>
     </div>
     </BrowserRouter>)
