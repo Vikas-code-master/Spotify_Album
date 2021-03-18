@@ -8,21 +8,25 @@ const Spotify = ()=>
     const [Albums , setAlbums] = useState(''); 
     useEffect(
         ()=>{
-            var myHeaders = new Headers();
-            myHeaders.append("Authorization", "BQCJaP1YprAyuNG-G-3iHfKaiDu8jxambqBOQEeqFZZPASF9F5nxLk9JRX4_8yqSBvSJn40Kw4qH4yfQDMef0al9E-2RI4H2nMrSvvHioKRzNN52RtCaofTiRyIrDNYqpNn3ety3VdZivKU5r_Uv2Ar3skyGKRZuug4");
-            
-            var requestOptions = {
-              method: 'GET',
-              headers: myHeaders,
-              redirect: 'follow'
-            };
-            
-            fetch("https://api.spotify.com/v1/albums?ids=15AzUynz7teTdMlQrogKmd,3FX5u4NRsdqBzG4D19yn4L,3fgTNjcIsvJweiSNP6v5xG,2jZGy0iv39ZQTpXZJ8K7pC,2xzGAGgWD6x2MGr2qVcQP0,72qrnM4yUNMDDlWiqKc8iY,6HukFdvHHvXI3EAhjvtnF3,1IeXdR2ptc5Jhxmko89CgE,0MDhZ0yRkugNEg7PmMMUE8,1D0PTM0bg7skufClSUOxTP", requestOptions)
-              .then(response => response.json())
-              .then(result => {console.log(result);
-                setAlbums(result);})
-              .catch(error => console.log('error', error));
-    
+            var axios = require('axios');
+
+                var config = {
+                method: 'get',
+                url: 'https://api.spotify.com/v1/albums?ids=15AzUynz7teTdMlQrogKmd,3FX5u4NRsdqBzG4D19yn4L,3fgTNjcIsvJweiSNP6v5xG,2jZGy0iv39ZQTpXZJ8K7pC,2xzGAGgWD6x2MGr2qVcQP0,72qrnM4yUNMDDlWiqKc8iY,6HukFdvHHvXI3EAhjvtnF3,1IeXdR2ptc5Jhxmko89CgE,0MDhZ0yRkugNEg7PmMMUE8,1D0PTM0bg7skufClSUOxTP',
+                headers: { 
+                    'Authorization': 'Bearer BQCJaP1YprAyuNG-G-3iHfKaiDu8jxambqBOQEeqFZZPASF9F5nxLk9JRX4_8yqSBvSJn40Kw4qH4yfQDMef0al9E-2RI4H2nMrSvvHioKRzNN52RtCaofTiRyIrDNYqpNn3ety3VdZivKU5r_Uv2Ar3skyGKRZuug4'
+                }
+                };
+
+                axios(config)
+                .then(function (response) {
+                console.log(JSON.stringify(response.data));
+                setAlbums(response.data)
+                })
+                .catch(function (error) {
+                console.log(error);
+                });
+
         },[])
     
     return (
